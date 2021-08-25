@@ -1,9 +1,158 @@
 <template>
-  <div>
+  <div class="all">
+    <div class="drones">
+      <div class="d-content">
+        <div class="drone">
+          <div class="drone-inner">
+            <div class="d-img-wr">
+              <img class="drone-img" src="../assets/drone1.png">
+            </div>
+
+            <div class="d-name">
+              GoPro karma
+            </div>
+
+            <div class="d-price-wr">
+              <div class="d-price">
+                $ 665
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="drone">
+          <div class="drone-inner">
+            <div class="d-img-wr">
+              <img class="drone-img2" src="../assets/drone2.png">
+            </div>
+
+            <div class="d-name">
+              DJI Inspire v
+            </div>
+
+            <div class="d-price-wr">
+              <div class="d-price">
+                $ 425
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="drone">
+          <div class="drone-inner">
+            <div class="d-img-wr">
+              <img class="drone-img2" src="../assets/drone3.png">
+            </div>
+
+            <div class="d-name">
+              DJI Inspire
+            </div>
+
+            <div class="d-price-wr">
+              <div class="d-price">
+                $ 473
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="drone">
+          <div class="drone-inner">
+            <div class="d-img-wr">
+              <img class="drone-img2" src="../assets/drone4.png">
+            </div>
+
+            <div class="d-name">
+              Parrot
+            </div>
+
+            <div class="d-price-wr">
+              <div class="d-price">
+                $ 665
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="drone">
+          <div class="drone-inner">
+            <div class="d-img-wr">
+              <img class="drone-img2" src="../assets/drone5.png">
+            </div>
+
+            <div class="d-name">
+              Zazzle
+            </div>
+
+            <div class="d-price-wr">
+              <div class="d-price">
+                $ 334
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="drone">
+          <div class="drone-inner">
+            <div class="d-img-wr">
+              <img class="drone-img2" src="../assets/drone6.png">
+            </div>
+
+            <div class="d-name">
+              Hexacopter
+            </div>
+
+            <div class="d-price-wr">
+              <div class="d-price">
+                $ 654
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="drone">
+          <div class="drone-inner">
+            <div class="d-img-wr">
+              <img class="drone-img2" src="../assets/drone7.png">
+            </div>
+
+            <div class="d-name">
+              Phantom
+            </div>
+
+            <div class="d-price-wr">
+              <div class="d-price">
+                $ 557
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="drone">
+          <div class="drone-inner">
+            <div class="d-img-wr">
+              <img class="drone-img2" src="../assets/drone8.png">
+            </div>
+
+            <div class="d-name">
+              DJI Mavic
+            </div>
+
+            <div class="d-price-wr">
+              <div class="d-price">
+                $ 239
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
     <div class="hello">
       <div class="bottom-mesh">
         <div class="b-m">
-          
+
         </div>
       </div>
 
@@ -17,7 +166,7 @@
 
           <div class="d-controls">
             <div class="hire-w">
-              <button class="hire-btn">Hire Drone</button>
+              <button @click="page2()" class="hire-btn">Hire Drone</button>
             </div>
 
             <div class="learn-more">
@@ -61,7 +210,7 @@
         </div>
 
         <div class="hire-w">
-          <button class="hire-btn">Hire Drone</button>
+          <button @click="page2()" class="hire-btn">Hire Drone</button>
         </div>
 
         <div class="learn-more">
@@ -167,7 +316,22 @@ export default {
     });
   },
 
-  methods: {},
+  methods: {
+    page2(){
+      gsap.to(".hello", {
+        ease: "power3.easeOut",
+        display: "none",
+        opacity: 0,
+        duration: 0.5,
+      });
+
+      gsap.to(".drones", {
+        ease: "power3.easeOut",
+        display: "block",
+        duration: 0.5,
+      });
+    }
+  },
 };
 </script>
 
