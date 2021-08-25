@@ -1,4 +1,4 @@
-![](https://raw.githubusercontent.com/Inffinite/Dronero/main/src/assets/pic3.png)
+![](https://raw.githubusercontent.com/Inffinite/Dronero/main/src/assets/pic1.png)
 
 # Dronero :airplane:
 
